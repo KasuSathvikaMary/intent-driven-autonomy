@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intent-driven-autonomy"
+version = "0.1.0"
+description = "Intent Compilation, Multi-Intent Drift Detection, and Adaptive Delegation Envelopes"
+authors = [
+    { name = "KasuSathvikaMary" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "plotly",
+    "dash",
+    "statsmodels",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+intent-sim = "simulation.cli:main"

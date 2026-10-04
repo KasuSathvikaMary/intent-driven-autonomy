@@ -1,0 +1,6 @@
+numpy
+plotly
+dash
+statsmodels
+pytest
+pytest-cov
