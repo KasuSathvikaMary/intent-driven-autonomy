@@ -25,3 +25,6 @@ dev = [
 
 [project.scripts]
 intent-sim = "simulation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["intent_compiler*", "drift_engine*", "delegation*", "simulation*", "benchmarks*"]
